@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+	<head>
+    		<script src="phaser.min.js"></script>
+    		<script type="text/javascript" src="js/phaser.min.js"></script>
+    		<script src="src/boot.js"></script>
+		<script src="src/preload.js"></script>
+		<script src="src/gametitle.js"></script>
+		<script src="src/thegame1.js"></script>
+		<script src="src/thegame2.js"></script>
+		<script src="src/gameover.js"></script>
+		<script src="src/assertopen.js"></script>
+		<script src="src/assertive.js"></script>
+    		<style>
+    			body{margin:0}
+    		</style>
+		<script>
+			(function() {
+				var game = new Phaser.Game(320, 480, Phaser.CANVAS, "game");
+				game.state.add("Boot",boot);
+				game.state.add("Preload",preload);
+				game.state.add("GameTitle",gameTitle);
+				game.state.add("TheGame1",theGame1);
+				game.state.add("TheGame2",theGame2);
+				game.state.add("GameOver",gameOver);
+
+				game.state.add("AssertOpen",assertopen);
+				game.state.add("Assertive",assertive);
+				game.state.start("Boot");
+			})();
+		</script>
+    </head>
+    <body>
+    </body>
+</html>

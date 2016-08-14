@@ -1,0 +1,39 @@
+html, body {
+    height:100%;
+    width:100%;
+    margin:0;
+    padding:0;
+}
+label {
+    font-size: 1.875em; 
+    font-weight:bold;
+    width: 450px;
+    padding:50px 0;
+}
+.table {
+    display:table;
+    text-align:center;
+    width:100%;
+    height:100%;
+    table-layout:fixed;
+}
+.cell {
+    display:table-cell;
+    vertical-align:middle;
+}
+form {
+    display:inline-block;
+    background: yellow;
+    border:8px solid black;
+    width: 450px;
+    padding:50px 0;
+    
+}
+
+p {
+font-size: 0.875em; 
+}
+
+input {
+    margin-bottom:15px;
+}
